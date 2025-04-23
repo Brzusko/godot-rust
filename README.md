@@ -12,7 +12,7 @@ This is a template repository for starting [Godot](https://godotengine.org/) pro
 ## Requirements
 
 - **Godot**: version **4.2 or newer**
-- **Rust**: version **1.74.0 or newer** (latest stable recommended)
+- **Rust**: version **1.86.0 or newer** (latest stable recommended)
 - `cargo`, `rustup`, and standard Rust toolchain installed
 
 ## TODO
