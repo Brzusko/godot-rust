@@ -1,14 +1,25 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
+use godot::prelude::*;
+
+
+use godot::prelude::*;
+use godot::classes::Node;
+
+#[derive(GodotClass)]
+#[class(base=Node, init)]
+struct Player {
+    base: Base<Node>
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+#[godot_api]
+impl INode for Player
+{
+    fn ready(&mut self)
+    {
+        godot_print!("Hello World");
     }
 }
+
+struct MyExtension;
+
+#[gdextension]
+unsafe impl ExtensionLibrary for MyExtension {}
