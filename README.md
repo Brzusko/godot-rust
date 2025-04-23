@@ -1,6 +1,6 @@
 # Godot + Rust Template
 
-This is a template repository for starting [Godot](https://godotengine.org/) projects using the Rust programming language. It includes a minimal setup with build scripts for Windows, Linux, and macOS, and is configured to work with `godot-rust`.
+This is a template repository for starting [Godot](https://godotengine.org/) projects using the Rust programming language. It includes a minimal setup with build scripts for Windows, Linux, and macOS, and is configured to work with [godot-rust](https://github.com/godot-rust/gdext).
 
 ## Features
 
