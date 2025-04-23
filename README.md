@@ -22,3 +22,4 @@ This is a template repository for starting [Godot](https://godotengine.org/) pro
 - [ ] Create a build script for compiling to WebAssembly (WASM)
 - [ ] Better catalog structure for build artifacts
 - [ ] Auto generate and install .gdextension file
+- [ ] CI/CD update based on docker/podman
