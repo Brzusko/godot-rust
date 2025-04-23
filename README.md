@@ -12,7 +12,7 @@ This is a template repository for starting [Godot](https://godotengine.org/) pro
 ## Requirements
 
 - **Godot**: version **4.2 or newer**
-- **Rust**: version **1.74.0 or newer** (latest stable recommended)
+- **Rust**: version **1.86.0 or newer** (latest stable recommended)
 - `cargo`, `rustup`, and standard Rust toolchain installed
 
 ## TODO
@@ -20,3 +20,5 @@ This is a template repository for starting [Godot](https://godotengine.org/) pro
 - [ ] Add support for passing compilation target as an argument to build scripts
 - [ ] Add support for passing debug flag as an argument to build scripts
 - [ ] Create a build script for compiling to WebAssembly (WASM)
+- [ ] Better catalog structure for build artifacts
+- [ ] Auto generate and install .gdextension file
