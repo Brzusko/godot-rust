@@ -15,14 +15,15 @@ This is a template repository for starting [Godot](https://godotengine.org/) pro
 - **Rust**: version **1.86.0 or newer** (latest stable recommended)
 - `cargo`, `rustup`, and standard Rust toolchain installed
 - installed 'cargo-make' for build scripting. Future developer can install 'cargo-make' by running command 'cargo install cargo-make'
+- **Python**: version **3**
 
 ## How to build project
 
 ## TODO
 
-- [ ] Add support for passing compilation target as an argument to build scripts
-- [ ] Add support for passing debug flag as an argument to build scripts
+- [X] Add support for passing compilation target as an argument to build scripts
+- [X] Add support for passing debug flag as an argument to build scripts
 - [ ] Create a build script for compiling to WebAssembly (WASM)
-- [ ] Create a build script for compiling to Linux
+- [X] Create a build script for compiling to Linux
 - [ ] Auto generate and install .gdextension file
 - [ ] CI/CD update based on docker/podman
