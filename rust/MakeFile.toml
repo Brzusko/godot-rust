@@ -1,0 +1,40 @@
+[env]
+CARGO_MAKE_EXTEND_WORKSPACE_MAKEFILE = true
+EXTENSION = { windows = "dll", linux = "so", mac = "dylib" }
+
+
+[tasks.build-windows-debug-msvc]
+command = "cargo"
+args = ["build", "--target", "x86_64-pc-windows-msvc"]
+
+[tasks.build-windows-release-msvc]
+command = "cargo"
+args = ["build", "--release", "--target", "x86_64-pc-windows-msvc"]
+
+[tasks.build-linux-debug]
+command = "cargo"
+args = ["build", "--target", "x86_64-unknown-linux-gnu"]
+
+[tasks.build-linux-release]
+command = "cargo"
+args = ["build", "--release", "--target", "x86_64-unknown-linux-gnu"]
+
+[tasks.build-macos-arm-debug]
+command = "cargo"
+args = ["build", "--target", "aarch64-apple-darwin"]
+
+[tasks.build-macos-arm-release]
+command = "cargo"
+args = ["build", "--release", "--target", "aarch64-apple-darwin"]
+
+[tasks.install-debug-artifact]
+script_runner = "@shell"
+script = [
+    '''
+    move ".\\target\\x86_64-pc-windows-msvc\\debug\\rust.dll" "..\\rust-lib\\debug\\"
+    move ".\\target\\x86_64-pc-windows-msvc\\debug\\rust.pdb" "..\\rust-lib\\debug\\"
+    '''
+]
+
+[tasks.test]
+dependencies = ["build-windows-debug-msvc", "install-debug-artifact"]
