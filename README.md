@@ -17,8 +17,6 @@ This is a template repository for starting [Godot](https://godotengine.org/) pro
 - installed 'cargo-make' for build scripting. Future developer can install 'cargo-make' by running command 'cargo install cargo-make'
 - **Python**: version **3**
 
-## How to build project
-
 ## TODO
 
 - [X] Add support for passing compilation target as an argument to build scripts
