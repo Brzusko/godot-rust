@@ -20,9 +20,9 @@ This is a template repository for starting [Godot](https://godotengine.org/) pro
 
 ## TODO
 
-- [X] Add support for passing compilation target as an argument to build scripts
-- [X] Add support for passing debug flag as an argument to build scripts
-- [X] Create a build script for compiling to WebAssembly (WASM)
-- [X] Create a build script for compiling to Linux
+- [ ] Add support for passing compilation target as an argument to build scripts
+- [ ] Add support for passing debug flag as an argument to build scripts
+- [ ] Create a build script for compiling to WebAssembly (WASM)
+- [ ] Create a build script for compiling to Linux
 - [ ] Auto generate and install .gdextension file
 - [ ] CI/CD update based on docker/podman
