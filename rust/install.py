@@ -1,5 +1,6 @@
 import sys;
 import shutil;
+import os;
 
 # sys.argv[0] - install.py
 # sys.argv[1] - build target
@@ -43,6 +44,11 @@ def install():
 
     source_path = f"./target/{TARGET}/{target_sub_path}/{file_name}"
     destination_path = "../godot/libs/rust/release/" if IS_RELEASE else "../rust-lib/debug/"
+
+    full_path = os.path(destination_path, file_name);
+
+    if os.path.exists(full_path):
+        os.remove(full_path);
 
     
     shutil.move(source_path, destination_path)
